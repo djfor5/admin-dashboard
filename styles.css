@@ -31,4 +31,26 @@ html, body {
 
 .main {
   grid-area: 2 / 2 / 3 / 3;
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+
+  background-color: lightgrey;
+}
+
+.your-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.announcements, .trending {
+  background-color: white;
+  border-radius: 3px;
 }
