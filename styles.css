@@ -118,6 +118,11 @@ html, body {
   margin-top: 3.9rem;
 }
 
+.trending a {
+  color: black;
+  text-decoration: none;
+}
+
 .card-announcements:first-child:before {
   content:'Annoucements';
   
