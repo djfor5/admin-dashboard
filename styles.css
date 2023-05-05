@@ -16,6 +16,23 @@ html, body {
   grid-area: 1 / 2 / 2 / 3;
 }
 
+.header img {
+  width: 1.5rem;
+}
+
+.header button {
+  background-color: rgb(68, 113, 235);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+}
+
+.header button a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .sidebar {
   grid-area: 1 / 1 / 3 / 2;
 
