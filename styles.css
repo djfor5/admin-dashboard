@@ -14,10 +14,17 @@ html, body {
 
 .header {
   grid-area: 1 / 2 / 2 / 3;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
-.header img {
+.header-top img {
   width: 1.5rem;
+}
+
+.header-bottom img {
+  width: 5rem;
 }
 
 .header button {
@@ -31,6 +38,45 @@ html, body {
   color: white;
   font-weight: bold;
   text-decoration: none;
+}
+
+.header-top {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  align-items: center;
+}
+
+.header-top-left {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-top-right {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-top input {
+  width: max(400px, 80%);
+  border-radius: 10px;
+  background-color: rgb(228, 228, 228);
+  border: none;
+  height: 2rem;
+}
+
+.header-bottom {
+  display: grid;
+  grid-template-columns: 1fr 7fr 4fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.heading {
+  display: grid;
 }
 
 .sidebar {
