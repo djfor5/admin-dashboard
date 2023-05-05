@@ -36,21 +36,80 @@ html, body {
   grid-template-columns: 3fr 1fr;
 
   background-color: lightgrey;
+  
+  position: relative;
 }
 
-.your-projects {
+.main-left-pane {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 10px;
-  padding: 10px;
+  gap: 0.7rem;
+
+  position: relative;
+  padding: 1rem;
+  padding-top: 3.9rem;
 }
 
 .card {
   background-color: white;
   border-radius: 5px;
+  padding: 0rem 1rem;
+}
+
+
+.card:first-child:before {
+  content:'Your Projects';
+  
+  font-size: 1.3rem;
+  color: black;
+  font-weight: bold;
+
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1;
+}
+
+.main-right-pane {
+  position: relative;
+  padding: 1rem;
+  padding-top: 3.9rem;
 }
 
 .announcements, .trending {
   background-color: white;
-  border-radius: 3px;
+  border-radius: 5px;
+  padding: 1rem 1rem;
+}
+
+.trending {
+  position: relative;
+
+  margin-top: 3.9rem;
+}
+
+.card-announcements:first-child:before {
+  content:'Annoucements';
+  
+  font-size: 1.3rem;
+  color: black;
+  font-weight: bold;
+
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1;
+}
+
+.card-trending:first-child:before {
+  content:'Trending';
+  
+  font-size: 1.3rem;
+  color: black;
+  font-weight: bold;
+
+  position: absolute;
+  top: -2.8rem;
+  left: 1rem;
+  z-index: 1;
 }
