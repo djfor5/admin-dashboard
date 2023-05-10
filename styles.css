@@ -167,6 +167,14 @@ html, body {
   font-weight: bold;
   font-size: 1.3rem;
   text-decoration: none;
+  padding-top: 0.4rem;
+  padding-bottom: 0.6rem;
+  transition: all 0.15s;
+}
+
+.sidebar-link a:hover {
+  color: orange;
+  border-bottom: 1px solid orange;
 }
 
 .main {
