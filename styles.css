@@ -34,18 +34,24 @@ html, body {
   width: 5rem;
 }
 
-.header button {
+.header a {
   background-color: rgb(68, 113, 235);
   border-radius: 2rem;
   font-size: 1rem;
   padding: 1rem 1.5rem;
   border: none;
-}
-
-.header button a {
   color: white;
   font-weight: bold;
   text-decoration: none;
+  transition: all 0.15s;
+}
+
+.header a:hover {
+  color: orange;
+}
+
+.header a:active {
+  color: darkorange;
 }
 
 .header-top {
