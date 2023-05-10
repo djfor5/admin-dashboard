@@ -205,10 +205,16 @@ html, body {
 
 .card-icons {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 0.5rem;
+  grid-template-columns: auto 1fr 1fr;
+  gap: 1rem;
+  margin-right: 2rem;
+  margin-left: auto;
 
   width: 5rem;
+}
+
+.card-icons a {
+  width: 1.6rem;
 }
 
 .main-right-pane {
