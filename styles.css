@@ -9,18 +9,25 @@ html, body {
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: auto 1fr;
 }
 
 .header {
   grid-area: 1 / 2 / 2 / 3;
 
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 2fr 3fr;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.header h2, .header h3 {
+  margin: 0.5rem;
 }
 
 .header-top img {
-  width: 1.5rem;
+  width: 2.5rem;
 }
 
 .header-bottom img {
@@ -29,8 +36,9 @@ html, body {
 
 .header button {
   background-color: rgb(68, 113, 235);
-  border-radius: 1rem;
-  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
   border: none;
 }
 
@@ -44,6 +52,9 @@ html, body {
   display: grid;
   grid-template-columns: 7fr 3fr;
   align-items: center;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header-top-left {
@@ -54,6 +65,8 @@ html, body {
 }
 
 .header-top-right {
+  justify-self: end;
+
   display: grid;
   grid-template-columns: auto auto 1fr;
   align-items: center;
@@ -73,6 +86,14 @@ html, body {
   grid-template-columns: 1fr 7fr 4fr;
   align-items: center;
   gap: 1rem;
+
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttons {
+  justify-self: end;
 }
 
 .heading {
