@@ -257,6 +257,10 @@ html, body {
   z-index: 1;
 }
 
+.card-announcements:not(:last-child) {
+  border-bottom: 2px solid rgb(212, 212, 212);
+}
+
 .card-trending:first-child:before {
   content:'Trending';
   
