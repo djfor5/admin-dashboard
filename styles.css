@@ -227,8 +227,7 @@ html, body {
 .card-icons {
   display: grid;
   grid-template-columns: auto 1fr 1fr;
-  gap: 1rem;
-  margin-right: 2rem;
+  margin-right: 3rem;
   margin-left: auto;
 
   width: 5rem;
@@ -236,6 +235,18 @@ html, body {
 
 .card-icons a {
   width: 1.6rem;
+  padding: 0.5rem;
+  border-radius: 3px;
+
+  transition: all 0.15s;
+}
+
+.card-icons a:hover {
+  background-color: lightgrey;
+}
+
+.card-icons a:active {
+  background-color: rgb(189, 189, 189);
 }
 
 .main-right-pane {
