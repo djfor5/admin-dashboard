@@ -174,9 +174,9 @@ html, body {
   font-weight: bold;
   font-size: 1.3rem;
   text-decoration: none;
-  transition: all 0.15s;
   padding-top: 1.5rem;
   padding-bottom: 0.3rem;
+  transition: all 0.15s;
 }
 
 .sidebar-link a span {
@@ -186,6 +186,11 @@ html, body {
 .sidebar-link a:hover {
   color: orange;
   border-bottom: 2px solid orange;
+}
+
+.sidebar-link a:active {
+  color: darkorange;
+  border-bottom: 4px solid darkorange;
 }
 
 .main {
